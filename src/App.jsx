@@ -6,31 +6,24 @@ export default function App() {
   const produtos = [
     {
       id: 1,
-      nome: "Smartphone Galaxy X",
-      preco: 2499.90,
-      descricao: "128GB, Tela 6.5', Câmera Tripla",
-      imagem: "https://via.placeholder.com/150"
+      nome: "Smartphone Galaxy S24",
+      preco: 4599.00,
+      descricao: "Tela Dynamic AMOLED 2X, 128GB, Câmera Tripla com IA",
+      imagem: "/imagens/galaxy-s24.png"
     },
     {
       id: 2,
-      nome: "iPhone Pro Max",
-      preco: 6999.00,
-      descricao: "256GB, Tela Super Retina XDR",
-      imagem: "https://via.placeholder.com/150"
+      nome: "Fone de Ouvido Bluetooth",
+      preco: 349.90,
+      descricao: "Cancelamento ativo de ruído, som HD e bateria de até 30 horas",
+      imagem: "/imagens/fone.png"
     },
     {
       id: 3,
-      nome: "Fone Bluetooth Bass",
-      preco: 299.90,
-      descricao: "Cancelamento de ruído e bateria 30h",
-      imagem: "https://via.placeholder.com/150"
-    },
-    {
-      id: 4,
-      nome: "Carregador Turbo 30W",
-      preco: 119.90,
-      descricao: "Carregamento rápido USB-C",
-      imagem: "https://via.placeholder.com/150"
+      nome: "Notebook Ultra Slim",
+      preco: 3899.00,
+      descricao: "Processador Intel Core i5, 16GB RAM, SSD 512GB",
+      imagem: "/imagens/notebook.png"
     }
   ];
 
@@ -39,7 +32,7 @@ export default function App() {
       <Header />
       
       <main style={{ padding: '20px', maxWidth: '1000px', margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center' }}>Produtos em Destaque</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Catálogo de Produtos</h2>
         
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
           {produtos.map((item) => (
